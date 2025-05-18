@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mermaid Flowchart</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #f8fafc;
+    }
+    pre.mermaid {
+      background: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+</head>
+<body>
+  <pre class="mermaid">
+flowchart TD
+    A[Start] --> B[Requirements]
+    B --> C[Data Integration]
+    C --> D[Feature Development]
+    D --> D1[Flight Updates]
+    D --> D2[Art Guide]
+    D --> D3[Airline Info]
+    D --> D4[Emergency Help]
+    D --> D5[AI Chatbot]
+    
+    D1 --> E[Platform Dev]
+    D2 --> E
+    D3 --> E
+    D4 --> E
+    D5 --> E
+    
+    E --> E1[Frontend/Backend]
+    E --> E2[API Integration]
+    E --> E3[Cloud Deploy]
+    E --> F[Testing]
+    F --> G[Pilot Launch]
+    G --> H[Future Roadmap]
+    H --> I[End]
+    
+    style A fill:#22c55e,stroke:#166534,color:white
+    style B fill:#f472b6,stroke:#be185d,color:white
+    style C fill:#facc15,stroke:#ca8a04,color:black
+    style D fill:#6d28d9,stroke:#4c1d95,color:white
+    style D1 fill:#6d28d9,stroke:#4c1d95,color:white
+    style D2 fill:#6d28d9,stroke:#4c1d95,color:white
+    style D3 fill:#6d28d9,stroke:#4c1d95,color:white
+    style D4 fill:#6d28d9,stroke:#4c1d95,color:white
+    style D5 fill:#6d28d9,stroke:#4c1d95,color:white
+    style E fill:#3b82f6,stroke:#1d4ed8,color:white
+    style E1 fill:#3b82f6,stroke:#1d4ed8,color:white
+    style E2 fill:#3b82f6,stroke:#1d4ed8,color:white
+    style E3 fill:#3b82f6,stroke:#1d4ed8,color:white
+    style F fill:#3b82f6,stroke:#1d4ed8,color:white
+    style G fill:#a78bfa,stroke:#7c3aed,color:white
+    style H fill:#facc15,stroke:#ca8a04,color:black
+    style I fill:#ef4444,stroke:#b91c1c,color:white
+  </pre>
+</body>
+</html>
